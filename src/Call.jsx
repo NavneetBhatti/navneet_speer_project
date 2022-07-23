@@ -50,8 +50,15 @@ function moveCall(call, update) {
 function Call(props) {
 	return (
 		<div className="fade-in call">
+		<div className="call-nav">
+		<BackIcon onClick={() => props.onBack()}/>
+		<button onClick={() => moveCall(props.info, props.onUpdate)}>
+		{props.info.is_archived
+		? "Unarchive" : "Archive"}
+		</button>
+		</div>
 
-		<ContactIcon/>
+		{/* <ContactIcon/> */}
 
 		<div>
 		<h3>{props.info.direction == 'inbound'
@@ -76,13 +83,13 @@ function Call(props) {
 		} seconds </h4>
 		</div>
 
-		<div className="call-nav">
+		{/* <div className="call-nav">
 		<BackIcon onClick={() => props.onBack()}/>
 		<button onClick={() => moveCall(props.info, props.onUpdate)}>
 		{props.info.is_archived
 		? "Unarchive" : "Archive"}
 		</button>
-		</div>
+		</div> */}
 
 		</div>
 	)
