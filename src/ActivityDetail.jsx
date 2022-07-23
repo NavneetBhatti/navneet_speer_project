@@ -1,4 +1,7 @@
 import React, {useState, useEffect} from 'react';
+import Archive from './Archive.jsx';
+
+
 
 // Icons could be moved to their own file in the future
 function ContactIcon() {

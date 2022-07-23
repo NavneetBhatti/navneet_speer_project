@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-function Navigator(props) {
+function Info(props) {
 	let recent = "recent" + (props.recent ? " selected" : '')
 	let archived = "archived" + (props.recent ? "" : " selected")
 	let slider = "nav-slider" + (props.recent ? " left" : " right")
@@ -19,4 +19,4 @@ function Navigator(props) {
 	)
 }
 
-export default Navigator
+export default Info

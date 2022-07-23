@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import Header from './Header.jsx';
 import Feed from './ActivityFeed.jsx';
-import Navigator from './Navigator.jsx';
+import  Info from './Info.jsx';
 import ActivityDetail from './ActivityDetail.jsx';
 
 function fetchActivities() {
@@ -43,7 +43,7 @@ const App = () => {
     <div className='container'>
 
       <Header/>
-	  <Navigator onPageChange={ (r) => {setEntry(null); setRecent(r)} }
+	  <Info onPageChange={ (r) => {setEntry(null); setRecent(r)} }
 	  recent={recent}/>
 
       <div className="container-view">
