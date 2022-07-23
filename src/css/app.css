@@ -94,8 +94,9 @@
 	position: relative;
 	margin-bottom: 20px;
 	padding: 10px;
+  border: 1px solid black;
 	border-radius: 5px;
-	box-shadow: 8px 14px 38px rgba(39,44,49,.1), 1px 3px 8px rgba(39,44,49,.06); 
+	/*box-shadow: 8px 14px 38px rgba(39,44,49,.1), 1px 3px 8px rgba(39,44,49,.06);  */
 }
 
 .calls button {
@@ -109,9 +110,9 @@
 }
 
 .calls h4 span {
-	background: darkorange;
+	background: white;
 	color: white;
-	border: 2px solid orange;
+	border: 2px solid black;
 	border-radius: 50%;
 	padding: 4px;
 	text-align: center;
