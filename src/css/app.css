@@ -1,4 +1,4 @@
-#app {
+/* #app {
   position: absolute;
   display: flex;
   align-items: center;
@@ -22,4 +22,229 @@
 #app .container-view {
   padding: 20px;
 }
+ */
 
+
+
+ @keyframes fade-in-translate {
+	from {
+		transform: translateX(-50px);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fade-in-translate-right {
+	from {
+		transform: translateX(50px);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.fade-in {
+	animation: fade-in-translate 0.3s 0.1s both;
+}
+
+.fade-in-right {
+	animation: fade-in-translate-right 0.3s 0.1s both;
+}
+
+#app {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#app .container {
+  width: 376px;
+  height: 666px;
+  z-index: 100;
+
+  background: white;
+  border-radius: 3px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .9);
+  overflow: scroll;
+}
+
+#app .container-view {
+  padding: 20px;
+}
+
+#app nav {
+	display: flex;
+	flex-flow: wrap;
+	justify-content: center;
+	/* gap: 40px; */
+	margin-top: 20px;
+}
+
+#app nav button {
+	width: 8em;;
+	background: white;
+	border: none;
+}
+
+.calls h4 {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+.calls li {
+	list-style: none;
+	display: block;
+	position: relative;
+	margin-bottom: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 8px 14px 38px rgba(39,44,49,.1), 1px 3px 8px rgba(39,44,49,.06); 
+}
+
+.calls button {
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	top: 20%;
+	right: 5%;
+	position: absolute;
+	display: block;
+}
+
+.calls h4 span {
+	background: darkorange;
+	color: white;
+	border: 2px solid orange;
+	border-radius: 50%;
+	padding: 4px;
+	text-align: center;
+	vertical-align: middle;
+	height: 12px;
+	min-width: 12px;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+.calls small {
+	color: darkgrey;
+}
+
+.calls svg {
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.calls svg.detail {
+	color: darkgrey;
+	padding: 5px;
+	border: 2px solid darkgrey;
+	border-radius: 50%;
+	right: 5%;
+	top: 25%;
+	position: absolute;
+	display: block;
+}
+
+.calls svg.detail:hover {
+	color: white;
+	background: darkgrey;
+}
+
+.calls svg.in-phone, .calls svg.out-phone {
+	color: green;
+}
+
+.calls div.date {
+	color: darkgrey;
+	text-align: center;
+}
+
+.call {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: wrap;
+	gap: 10px;
+}
+.call svg {
+	width: 40px;
+}
+
+.call .call-nav {
+	width: 100%;
+}
+
+.call .call-nav svg {
+	color: darkgrey;
+	padding: 5px;
+	border: 2px solid darkgrey;
+	border-radius: 50%;
+	display: block;
+	width: 15px;
+}
+
+.call .call-nav svg:hover {
+	color: white;
+	background: darkgrey;
+}
+
+.call .call-nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.call-nav button {
+	border: 2px solid grey;
+	border-radius: 5px;
+	background: white;
+}
+
+nav div {
+	width: 100%;
+	height: 5px;
+	margin-top: 10px;
+}
+
+nav div span {
+	width: 25%;
+	height: 2px;
+	display: block;
+	background: green;
+	margin: auto;
+}
+
+nav div span.left {
+	transform: translateX(-70%);
+}
+
+nav div span.right {
+	transform: translateX(70%);
+}
+
+nav div span {
+	transition: 0.2s ease-in-out;
+}
+
+ul {
+	transition: all 0.2s ease-in;
+}

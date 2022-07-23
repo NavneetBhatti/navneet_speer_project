@@ -1,13 +1,55 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import ReactDOM from 'react-dom';
 
 import Header from './Header.jsx';
+import Feed from './ActivityFeed.jsx';
+import Navigator from './Navigator.jsx';
+import Call from './Call.jsx';
 
+function fetchActivities() {
+	return fetch('https://aircall-job.herokuapp.com/activities')
+		.then(response => {
+		return response.json()
+	})
+}
+
+function fetchEntry(id) {
+	return fetch('https://aircall-job.herokuapp.com/activities/' + id)
+		.then(response => {
+		return response.json()
+	})
+}
+
+// The parent component used for main control of AJAX data
 const App = () => {
+	const [recent, setRecent] = useState(true)
+	const [entry, setEntry] = useState()
+	const [ stack, setStack ] = useState(null)
+
+	useEffect(() => {
+		fetchActivities().then(data => {setStack(data)})
+	}, [])
+
+	let focus = <Feed stack={stack} recent={recent} onSelect={ (c) => setEntry(c) }/>
+	if (entry) {
+		focus = <Call info={entry} onBack={() => setEntry(null)}
+		onUpdate={(e) => {
+			fetchEntry(e.id).then(data => setEntry(data))
+			fetchActivities().then(data => setStack(data))
+		}}/>
+	}
+
   return (
     <div className='container'>
+
       <Header/>
-      <div className="container-view">Some activities should be here</div>
+	  <Navigator onPageChange={ (r) => {setEntry(null); setRecent(r)} }
+	  recent={recent}/>
+
+      <div className="container-view">
+	  {focus}
+	  </div>
+
     </div>
   );
 };

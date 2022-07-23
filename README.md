@@ -3,9 +3,9 @@
 The goal of this test is to make you code a small ReactJS app. We have prepared a skeleton app for you, but please change whatever you want (CSS files, HTML structure, JS structure, etc).
 
 The app will have two different components:
-- **Activity Feed** - simple list of calls
-- **Activity Detail** - detail of a call
-- **Archive** - the final user should be able to archive (and unarchive) a call. Archived calls will no longer be displayed on the Activity Feed and should have a separate Archived Tab.
+- **Activity ActivityFeed** - simple list of ActivityDetails
+- **Activity Detail** - detail of a ActivityDetail
+- **Archive** - the final user should be able to archive (and unarchive) a ActivityDetail. Archived ActivityDetails will no longer be displayed on the Activity ActivityFeed and should have a separate Archived Tab.
 
 Show us what you can do in 24 hours. You will be assessed on the following parameters: 
 - Focus on design (Pay attention to the UI/UX and transitions)
@@ -35,28 +35,28 @@ yarn start
 
 ### Routes
 
-Here is the API address: https://aircall-job.herokuapp.com.
+Here is the API address: https://airActivityDetail-job.herokuapp.com.
 
 As you can see, it's hosted on a free Heroku server, which means that the first time you will fetch the API, it will take few seconds to answer.
 
-- **GET** - https://aircall-job.herokuapp.com/activities: get calls to display in the Activity Feed
-- **GET** - https://aircall-job.herokuapp.com/activities/:id: retrieve a specific call details
-- **POST** - https://aircall-job.herokuapp.com/activities/:id: update a call. The only field updatable is `is_archived (bool)`. You'll need to send a JSON in the request body:
+- **GET** - https://airActivityDetail-job.herokuapp.com/activities: get ActivityDetails to display in the Activity ActivityFeed
+- **GET** - https://airActivityDetail-job.herokuapp.com/activities/:id: retrieve a specific ActivityDetail details
+- **POST** - https://airActivityDetail-job.herokuapp.com/activities/:id: update a ActivityDetail. The only field updatable is `is_archived (bool)`. You'll need to send a JSON in the request body:
 ```
 {
   is_archived: true
 }
 ```
-- **GET** - https://aircall-job.herokuapp.com/reset: Reset all calls to initial state (usefull if you archived all calls).
+- **GET** - https://airActivityDetail-job.herokuapp.com/reset: Reset all ActivityDetails to initial state (usefull if you archived all ActivityDetails).
 
-### Call object
+### ActivityDetail object
 
-- **id** - unique ID of call
+- **id** - unique ID of ActivityDetail
 - **created_at** - creation date
-- **direction** - `inbound` or `outbound` call
-- **from** - caller's number
-- **to** - callee's number
-- **via** - Aircall number used for the call
-- **duration** - duration of a call (in seconds)
-- **is_archived** - call is archived or not
-- **call_type** - can be a `missed`, `answered` or `voicemail` call.
+- **direction** - `inbound` or `outbound` ActivityDetail
+- **from** - ActivityDetailer's number
+- **to** - ActivityDetailee's number
+- **via** - AirActivityDetail number used for the ActivityDetail
+- **duration** - duration of a ActivityDetail (in seconds)
+- **is_archived** - ActivityDetail is archived or not
+- **ActivityDetail_type** - can be a `missed`, `answered` or `voicemail` ActivityDetail.

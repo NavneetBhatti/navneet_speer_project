@@ -400,9 +400,9 @@ babel-helper-builder-react-jsx@^6.24.1:
     babel-types "^6.26.0"
     esutils "^2.0.2"
 
-babel-helper-call-delegate@^6.24.1:
+babel-helper-ActivityDetail-delegate@^6.24.1:
   version "6.24.1"
-  resolved "https://registry.yarnpkg.com/babel-helper-call-delegate/-/babel-helper-call-delegate-6.24.1.tgz#ece6aacddc76e41c3461f88bfc575bd0daa2df8d"
+  resolved "https://registry.yarnpkg.com/babel-helper-ActivityDetail-delegate/-/babel-helper-ActivityDetail-delegate-6.24.1.tgz#ece6aacddc76e41c3461f88bfc575bd0daa2df8d"
   integrity sha1-7Oaqzdx25Bw0YfiL/Fdb0Nqi340=
   dependencies:
     babel-helper-hoist-variables "^6.24.1"
@@ -456,9 +456,9 @@ babel-helper-hoist-variables@^6.24.1:
     babel-runtime "^6.22.0"
     babel-types "^6.24.1"
 
-babel-helper-optimise-call-expression@^6.24.1:
+babel-helper-optimise-ActivityDetail-expression@^6.24.1:
   version "6.24.1"
-  resolved "https://registry.yarnpkg.com/babel-helper-optimise-call-expression/-/babel-helper-optimise-call-expression-6.24.1.tgz#f7a13427ba9f73f8f4fa993c54a97882d1244257"
+  resolved "https://registry.yarnpkg.com/babel-helper-optimise-ActivityDetail-expression/-/babel-helper-optimise-ActivityDetail-expression-6.24.1.tgz#f7a13427ba9f73f8f4fa993c54a97882d1244257"
   integrity sha1-96E0J7qfc/j0+pk8VKl4gtEkQlc=
   dependencies:
     babel-runtime "^6.22.0"
@@ -489,7 +489,7 @@ babel-helper-replace-supers@^6.24.1:
   resolved "https://registry.yarnpkg.com/babel-helper-replace-supers/-/babel-helper-replace-supers-6.24.1.tgz#bf6dbfe43938d17369a213ca8a8bf74b6a90ab1a"
   integrity sha1-v22/5Dk40XNpohPKiov3S2qQqxo=
   dependencies:
-    babel-helper-optimise-call-expression "^6.24.1"
+    babel-helper-optimise-ActivityDetail-expression "^6.24.1"
     babel-messages "^6.23.0"
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
@@ -593,7 +593,7 @@ babel-plugin-transform-es2015-classes@^6.23.0:
   dependencies:
     babel-helper-define-map "^6.24.1"
     babel-helper-function-name "^6.24.1"
-    babel-helper-optimise-call-expression "^6.24.1"
+    babel-helper-optimise-ActivityDetail-expression "^6.24.1"
     babel-helper-replace-supers "^6.24.1"
     babel-messages "^6.23.0"
     babel-runtime "^6.22.0"
@@ -697,7 +697,7 @@ babel-plugin-transform-es2015-parameters@^6.23.0:
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-es2015-parameters/-/babel-plugin-transform-es2015-parameters-6.24.1.tgz#57ac351ab49caf14a97cd13b09f66fdf0a625f2b"
   integrity sha1-V6w1GrScrxSpfNE7CfZv3wpiXys=
   dependencies:
-    babel-helper-call-delegate "^6.24.1"
+    babel-helper-ActivityDetail-delegate "^6.24.1"
     babel-helper-get-function-arity "^6.24.1"
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
@@ -1866,7 +1866,7 @@ es-abstract@^1.5.1:
     es-to-primitive "^1.2.0"
     function-bind "^1.1.1"
     has "^1.0.3"
-    is-callable "^1.1.4"
+    is-ActivityDetailable "^1.1.4"
     is-regex "^1.0.4"
     object-keys "^1.0.12"
 
@@ -1875,7 +1875,7 @@ es-to-primitive@^1.2.0:
   resolved "https://registry.yarnpkg.com/es-to-primitive/-/es-to-primitive-1.2.0.tgz#edf72478033456e8dda8ef09e00ad9650707f377"
   integrity sha512-qZryBOJjV//LaxLTV6UC//WewneB3LcXOL9NP++ozKVXsIIIpm/2c13UDiD9Jp2eThsecw9m3jPqDwTyobcdbg==
   dependencies:
-    is-callable "^1.1.4"
+    is-ActivityDetailable "^1.1.4"
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
@@ -2261,9 +2261,9 @@ gauge@~2.7.3:
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
 
-get-caller-file@^1.0.1:
+get-ActivityDetailer-file@^1.0.1:
   version "1.0.3"
-  resolved "https://registry.yarnpkg.com/get-caller-file/-/get-caller-file-1.0.3.tgz#f978fa4c90d1dfe7ff2d6beda2a515e713bdcf4a"
+  resolved "https://registry.yarnpkg.com/get-ActivityDetailer-file/-/get-ActivityDetailer-file-1.0.3.tgz#f978fa4c90d1dfe7ff2d6beda2a515e713bdcf4a"
   integrity sha512-3t6rVToeoZfYSGd8YoLFR2DJkiQrIiUrGcjvFX2mDw3bn6k2OtwHN0TNCLbBO+w8qTvimhDkv+LSscbJY1vE6w==
 
 get-stream@^3.0.0:
@@ -2720,9 +2720,9 @@ is-buffer@^1.1.5:
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
   integrity sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
 
-is-callable@^1.1.4:
+is-ActivityDetailable@^1.1.4:
   version "1.1.4"
-  resolved "https://registry.yarnpkg.com/is-callable/-/is-callable-1.1.4.tgz#1e1adf219e1eeb684d691f9d6a05ff0d30a24d75"
+  resolved "https://registry.yarnpkg.com/is-ActivityDetailable/-/is-ActivityDetailable-1.1.4.tgz#1e1adf219e1eeb684d691f9d6a05ff0d30a24d75"
   integrity sha512-r5p9sxJjYnArLjObpjA4xu5EKI3CuKHkJXMhT7kwbpUyIFD1n5PMAsoPvWnvtZiNz7LjkYDRZhd7FlI0eMijEA==
 
 is-data-descriptor@^0.1.4:
@@ -5154,7 +5154,7 @@ yargs@12.0.2:
     cliui "^4.0.0"
     decamelize "^2.0.0"
     find-up "^3.0.0"
-    get-caller-file "^1.0.1"
+    get-ActivityDetailer-file "^1.0.1"
     os-locale "^3.0.0"
     require-directory "^2.1.1"
     require-main-filename "^1.0.1"
@@ -5172,7 +5172,7 @@ yargs@^12.0.4:
     cliui "^4.0.0"
     decamelize "^1.2.0"
     find-up "^3.0.0"
-    get-caller-file "^1.0.1"
+    get-ActivityDetailer-file "^1.0.1"
     os-locale "^3.0.0"
     require-directory "^2.1.1"
     require-main-filename "^1.0.1"
