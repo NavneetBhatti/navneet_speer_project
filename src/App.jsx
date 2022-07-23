@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import Header from './Header.jsx';
 import Feed from './ActivityFeed.jsx';
 import Navigator from './Navigator.jsx';
-import Call from './Call.jsx';
+import ActivityDetail from './ActivityDetail.jsx';
 
 function fetchActivities() {
 	return fetch('https://aircall-job.herokuapp.com/activities')
@@ -32,7 +32,7 @@ const App = () => {
 
 	let focus = <Feed stack={stack} recent={recent} onSelect={ (c) => setEntry(c) }/>
 	if (entry) {
-		focus = <Call info={entry} onBack={() => setEntry(null)}
+		focus = <ActivityDetail info={entry} onBack={() => setEntry(null)}
 		onUpdate={(e) => {
 			fetchEntry(e.id).then(data => setEntry(data))
 			fetchActivities().then(data => setStack(data))

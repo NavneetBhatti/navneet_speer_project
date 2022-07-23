@@ -47,7 +47,7 @@ function moveCall(call, update) {
 }
 
 // Displays details of a specific call
-function Call(props) {
+function ActivityDetail(props) {
 	return (
 		<div className="fade-in call">
 		<div className="call-nav">
@@ -88,23 +88,10 @@ function Call(props) {
 		</h3>
 		</div>
 
-		{/* <div>
-		<h3>
-		{parseInt(props.info.duration / 60)
-		} mins {props.info.duration % 60
-		} seconds </h3>
-		</div> */}
-
-		{/* <div className="call-nav">
-		<BackIcon onClick={() => props.onBack()}/>
-		<button onClick={() => moveCall(props.info, props.onUpdate)}>
-		{props.info.is_archived
-		? "Unarchive" : "Archive"}
-		</button>
-		</div> */}
+		
 
 		</div>
 	)
 }
 
-export default Call
+export default ActivityDetail;
