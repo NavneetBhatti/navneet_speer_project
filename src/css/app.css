@@ -112,13 +112,13 @@
 .calls h4 span {
 	background: white;
 	color: white;
-	border: 2px solid black;
+	border: 2px solid green;
 	border-radius: 50%;
 	padding: 4px;
 	text-align: center;
 	vertical-align: middle;
-	height: 12px;
-	min-width: 12px;
+	/* height: 12px; */
+	/* min-width: 12px; */
 	display: inline-block;
 	margin-right: 7px;
 }
@@ -221,6 +221,20 @@ nav div span.right {
 nav div span {
 	transition: 0.2s ease-in-out;
 }
+
+.detail{
+  color: green;
+  text-decoration: underline overline;
+}
+
+.btn{
+  background-color: green !important;
+  color: white;
+}
+.detailContainer{
+  margin-left: 120px;
+}
+
 
 ul {
 	transition: all 0.2s ease-in;

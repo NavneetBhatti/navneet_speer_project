@@ -22,7 +22,7 @@ function ContactIcon() {
 function BackIcon(props) {
 	return (
 		<div>
-		 <button onClick={() => props.onClick()}>Back</button>
+		 <button className="btn" onClick={() => props.onClick()}>Back</button>
 		 </div>
 
 	) 
@@ -51,37 +51,49 @@ function Call(props) {
 	return (
 		<div className="fade-in call">
 		<div className="call-nav">
+
 		<BackIcon onClick={() => props.onBack()}/>
-		<button onClick={() => moveCall(props.info, props.onUpdate)}>
+		<button className="btn" onClick={() => moveCall(props.info, props.onUpdate)}>
 		{props.info.is_archived
 		? "Unarchive" : "Archive"}
 		</button>
 		</div>
 
+
+
 		{/* <ContactIcon/> */}
 
-		<div>
-		<h3>{props.info.direction == 'inbound'
+		<div class="detailContainer">
+		<h1 class="detail"><b>Details</b></h1><br/><br/>
+
+		<h1><b>{props.info.direction == 'inbound'
 			? props.info.from
 			: props.info.to}
-		</h3>
+		</b></h1><br/><br/>
 
-		<h4>
+		<div>
+		<h3>
+		{parseInt(props.info.duration / 60)
+		} mins {props.info.duration % 60
+		} seconds </h3>
+		</div><br/><br/>
+
+		<h3>
 		{new Date(props.info.created_at).toLocaleTimeString([],
 			{hour: '2-digit', minute: '2-digit'})
 		} - {props.info.call_type}
-		</h4>
-		<small>
+		</h3><br/><br/>
+		<h3>
 		{new Date(props.info.created_at).toLocaleDateString()}
-		</small>
+		</h3>
 		</div>
 
-		<div>
-		<h4>
+		{/* <div>
+		<h3>
 		{parseInt(props.info.duration / 60)
 		} mins {props.info.duration % 60
-		} seconds </h4>
-		</div>
+		} seconds </h3>
+		</div> */}
 
 		{/* <div className="call-nav">
 		<BackIcon onClick={() => props.onBack()}/>
