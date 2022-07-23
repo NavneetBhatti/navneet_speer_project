@@ -3,7 +3,7 @@ import Archive from './Archive.jsx';
 
 
 
-// Icons could be moved to their own file in the future
+// Icons could be moved to their own file in the future--
 function ContactIcon() {
 	return (
 <svg width="1em" height="1em" viewBox="0 0 16 16" className="bi
