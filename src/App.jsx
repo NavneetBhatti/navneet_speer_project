@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import ReactDOM from 'react-dom';
 
 import Header from './Header.jsx';
-import Feed from './ActivityFeed.jsx';
+import ActivityFeed from './ActivityFeed.jsx';
 import  Info from './Info.jsx';
 import ActivityDetail from './ActivityDetail.jsx';
 
@@ -20,7 +20,6 @@ function fetchEntry(id) {
 	})
 }
 
-// The parent component used for main control of AJAX data
 const App = () => {
 	const [recent, setRecent] = useState(true)
 	const [entry, setEntry] = useState()
@@ -30,7 +29,7 @@ const App = () => {
 		fetchActivities().then(data => {setStack(data)})
 	}, [])
 
-	let focus = <Feed stack={stack} recent={recent} onSelect={ (c) => setEntry(c) }/>
+	let focus = <ActivityFeed stack={stack} recent={recent} onSelect={ (c) => setEntry(c) }/>
 	if (entry) {
 		focus = <ActivityDetail info={entry} onBack={() => setEntry(null)}
 		onUpdate={(e) => {

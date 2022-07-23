@@ -62,7 +62,7 @@ function Seperator(props) {
 } 
 
 // The component used for sorting and rendering the call list.
-function Feed(props) {
+function ActivityFeed(props) {
 	
 	const stack = props.stack
 	let entries
@@ -113,4 +113,4 @@ function Feed(props) {
 	)
 }
 
-export default Feed;
+export default ActivityFeed;

@@ -56,6 +56,7 @@ function ActivityDetail(props) {
 		<div className="call-nav">
 
 		<BackIcon onClick={() => props.onBack()}/>
+		{/* <Archive call={props.info} update={props.update}/> */}
 		<button className="btn" onClick={() => moveCall(props.info, props.onUpdate)}>
 		{props.info.is_archived
 		? "Unarchive" : "Archive"}

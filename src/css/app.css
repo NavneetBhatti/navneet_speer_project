@@ -96,7 +96,6 @@
 	padding: 10px;
   border: 1px solid black;
 	border-radius: 5px;
-	/*box-shadow: 8px 14px 38px rgba(39,44,49,.1), 1px 3px 8px rgba(39,44,49,.06);  */
 }
 
 .calls button {
@@ -117,8 +116,6 @@
 	padding: 4px;
 	text-align: center;
 	vertical-align: middle;
-	/* height: 12px; */
-	/* min-width: 12px; */
 	display: inline-block;
 	margin-right: 7px;
 }
@@ -133,10 +130,7 @@
 }
 
 .calls svg.detail {
-	/* color: darkgrey; */
 	padding: 5px;
-	/* border: 2px solid darkgrey; */
-	/* border-radius: 50%; */
 	right: 5%;
 	top: 25%;
 	position: absolute;
