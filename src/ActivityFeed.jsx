@@ -40,13 +40,14 @@ function PhoneSymbol(props) {
 
 function DetailSymbol(props) {
 	return (
-		<svg onClick={() => props.onClick()}width="1em" height="1em" viewBox="0 0 16 16" className="bi
-			bi-chevron-right detail icon" fill="currentColor"
-			xmlns="http://www.w3.org/2000/svg"> <path strokeWidth="1px"
-			fillRule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0
-			1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0
-			1 0-.708z"/> </svg>
+
+		<svg onClick={() => props.onClick()}
+		xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" className="bi bi-info-circle detail icon" viewBox="0 0 16 16">
+		<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+		<path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+		</svg>
 	)
+	
 
 }
 
@@ -75,12 +76,19 @@ function Feed(props) {
 			}
 
 			return (
+				<div>
+
 				<li className={props.recent ? 'fade-in'
 					: 'fade-in-right'} key={entry.id}>
 
-				<h4>{entry.direction == 'inbound' ? entry.from : entry.to}
-				<PhoneSymbol inbound={entry.direction == 'inbound'}/>
+
+				<h4>
+					<span><PhoneSymbol inbound={entry.direction == 'inbound'}/> </span>
+					{entry.direction == 'inbound' ? entry.from : entry.to}
+				{/* <PhoneSymbol inbound={entry.direction == 'inbound'}/> */}
 				</h4>
+
+				
 
 				<small>{(new Date(entry.created_at).toLocaleDateString())}
 				</small> <small>{(new Date(entry.created_at).toLocaleTimeString([],
@@ -91,6 +99,8 @@ function Feed(props) {
 				<DetailSymbol onClick={() => props.onSelect(entry)}/>
 
 				</li>
+
+				</div>
 			)
 		})
 

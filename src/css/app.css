@@ -1,28 +1,4 @@
-/* #app {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-}
 
-#app .container {
-  width: 376px;
-  height: 666px;
-  z-index: 100;
-
-  background: white;
-  border-radius: 3px;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .9);
-}
-
-#app .container-view {
-  padding: 20px;
-}
- */
 
 
 
@@ -143,7 +119,7 @@
 	height: 12px;
 	min-width: 12px;
 	display: inline-block;
-	margin-left: 5px;
+	margin-right: 7px;
 }
 
 .calls small {
@@ -156,10 +132,10 @@
 }
 
 .calls svg.detail {
-	color: darkgrey;
+	/* color: darkgrey; */
 	padding: 5px;
-	border: 2px solid darkgrey;
-	border-radius: 50%;
+	/* border: 2px solid darkgrey; */
+	/* border-radius: 50%; */
 	right: 5%;
 	top: 25%;
 	position: absolute;
@@ -167,8 +143,8 @@
 }
 
 .calls svg.detail:hover {
-	color: white;
-	background: darkgrey;
+	/* color: white; */
+	/* background: darkgrey; */
 }
 
 .calls svg.in-phone, .calls svg.out-phone {
