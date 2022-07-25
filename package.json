@@ -10,7 +10,7 @@
   "scripts": {
     "start": "webpack-dev-server -d --config webpack.dev.config.js --content-base public/ --progress --colors",
     "build": "webpack --mode production",
-    "heroku-prebuild": "npm install --dev"
+    "heroku config":"set NPM_CONFIG_PRODUCTION=false"
   },
   "dependencies": {
     "react": "^16.3.1",
