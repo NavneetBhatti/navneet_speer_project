@@ -26,6 +26,8 @@
     "style-loader": "0.23.*",
     "webpack": "4.29.*",
     "webpack-cli": "3.2.*",
-    "webpack-dev-server": "3.1.*"
+    "webpack-dev-server": "3.1.*",
+    "heroku config":"set NPM_CONFIG_PRODUCTION=false"
+
   }
 }
