@@ -61,7 +61,7 @@ function Seperator(props) {
 	return <span></span>
 } 
 
-// The component used for sorting and rendering the call list.
+// sorting and rendering the call list.
 function ActivityFeed(props) {
 	
 	const stack = props.stack
@@ -85,7 +85,6 @@ function ActivityFeed(props) {
 				<h4>
 					<span><PhoneSymbol inbound={entry.direction == 'inbound'}/> </span>
 					{entry.direction == 'inbound' ? entry.from : entry.to}
-				{/* <PhoneSymbol inbound={entry.direction == 'inbound'}/> */}
 				</h4>
 
 				
