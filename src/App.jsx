@@ -7,6 +7,7 @@ import  Info from './Info.jsx';
 import ActivityDetail from './ActivityDetail.jsx';
 
 //function...
+//test nk
 function fetchActivities() {
 	return fetch('https://aircall-job.herokuapp.com/activities')
 		.then(response => {
