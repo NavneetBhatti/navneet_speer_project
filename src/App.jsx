@@ -6,7 +6,7 @@ import ActivityFeed from './ActivityFeed.jsx';
 import  Info from './Info.jsx';
 import ActivityDetail from './ActivityDetail.jsx';
 
-//function
+//function..
 function fetchActivities() {
 	return fetch('https://aircall-job.herokuapp.com/activities')
 		.then(response => {
