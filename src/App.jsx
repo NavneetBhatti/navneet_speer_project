@@ -10,6 +10,7 @@ import ActivityDetail from './ActivityDetail.jsx';
 //test nk
 //test nk2
 //test nk 3
+//test nk4
 function fetchActivities() {
 	return fetch('https://aircall-job.herokuapp.com/activities')
 		.then(response => {
